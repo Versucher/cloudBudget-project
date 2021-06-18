@@ -1,0 +1,48 @@
+.header {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    color: #ffffff;
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    &__title {
+        @include font(18px, 22px, normal);
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__menu {
+        @include font(14px, 17px, normal);
+        display: flex;
+        list-style-type: none;
+        column-gap: 30px;
+    }
+    &__link {
+        cursor: pointer;
+    }
+    &__button {
+        @include font(14px, 17px, normal);
+        text-transform: uppercase;
+        height: 40px;
+        padding: 0 28px;
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        color: #ffffff;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: .6s;
+        margin-left: 29px;
+        &:hover {
+            background-color: #fff;
+            color: $pink;
+            transition: .6s;
+        }
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+    }
+}
